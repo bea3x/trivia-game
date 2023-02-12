@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Milyonaryo Quiz Game</string>
+    <string name="winMsg">"TAMA!"</string>
+    <string name="loseMsg">"MALI!"</string>
+    <string name="loseMsgPrize">"Maguuwi ka ng P%1s"</string>
+    <string name="saveScoreConfirm">"Would you like to save your score?"</string>
+    <string name="ansYes">"Yes"</string>
+    <string name="ansNo">"No"</string>
+
+    <string name="round12Prize">"2000000"</string>
+    <string name="round11Prize">"1000000"</string>
+    <string name="round10Prize">"600000"</string>
+    <string name="round9Prize">"400000"</string>
+    <string name="round8Prize">"250000"</string>
+    <string name="round7Prize">"150000"</string>
+    <string name="round6Prize">"100000"</string>
+    <string name="round5Prize">"70000"</string>
+    <string name="round4Prize">"50000"</string>
+    <string name="round3Prize">"35000"</string>
+    <string name="round2Prize">"20000"</string>
+    <string name="round1Prize">"10000"</string>
+    <string name="startMoney">"0"</string>
+
+    <string name="confirmAnsDialog">Iyan na ba ang iyong final answer?</string>
+    <string name="saveScoreDialog">Gusto mo bang isubmit ang iyong iskor?</string>
+    <string name="continueGameDialog">Gusto mo bang magpatuloy?</string>
+
+</resources>

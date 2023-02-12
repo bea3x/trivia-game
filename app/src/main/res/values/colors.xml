@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="green">#00FF00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue_dark">#182848</color>
+    <color name="yellow">#FFF83B</color>
+    <color name="silver">#E6F2F9</color>
+    <color name="blue_ish">#D4E1F8</color>
+    <color name="gray_ish">#DBE3E6</color>
+    <color name="violet_dark">#A387B3</color>
+    <color name="yellow_main">#FEAE00</color>
+
+    <color name="yellow_main_transparent50">#80FEAE00</color>
+    <color name="green_main">#27FB08</color>
+    <color name="blue_main">#100063</color>
+    <color name="blue_main95">#F2100063</color>
+
+    <color name="blue_dark_transparent95">#F2182848</color>
+    <color name="blue_dark_transparent90">#E6182848</color>
+    <color name="blue_dark_transparent85">#D9182848</color>
+    <color name="blue_dark_transparent80">#CC182848</color>
+    <color name="blue_main_transparent">#CC100063</color>
+    <color name="blue_main_transparent95">#F2100063</color>
+    <color name="blueberry_transparent90">#E62D254F</color>
+    <color name="blueberry_transparent95">#F22D254F</color>
+    <color name="blueberry_transparent80">#CC2D254F</color>
+    <color name="blueberry_transparent50">#802D254F</color>
+    <color name="blueberry">#2D254F</color>
+    <color name="transparent">#00000000</color>
+    <color name="violet">#B59AC2</color>
+    <color name="rando">#124567</color>
+</resources>
