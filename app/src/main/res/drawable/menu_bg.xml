@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/wwtbam_bg">
+
+    </item>
+    <item >
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="@color/blue_dark_transparent85"
+                android:endColor="@color/blueberry_transparent90"
+                android:angle="90"/>
+
+        </shape>
+    </item>
+</layer-list>

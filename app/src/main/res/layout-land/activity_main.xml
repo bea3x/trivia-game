@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/studio"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/ll_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/btn_leave"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/lifelines_walkawayhdpi" />
+
+
+        <ImageView
+            android:id="@+id/btn_lifeline_switch"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@id/btn_lifeline_askHost"
+            app:srcCompat="@drawable/lifelines_switchhdpi" />
+
+        <ImageView
+            android:id="@+id/btn_lifeline_askHost"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@id/header_dummy"
+            app:srcCompat="@drawable/lifelines_askhosthdpi" />
+
+
+        <View
+            android:id="@+id/header_dummy"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/btn_lifeline_fifty50"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/header_dummy"
+            android:visibility="visible"
+            app:srcCompat="@drawable/lifelines_fifty50hdpi" />
+
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/timer_bg"
+            android:fontFamily="@font/anton"
+            android:gravity="center"
+            android:text="60"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/infoBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/infobox_bg"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/ll_question"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_header">
+
+        <View
+            android:id="@+id/dummy1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:id="@+id/txt_infoMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dummy1"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/anton"
+            android:text="Final Answer?"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/dummy2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/txt_infoMsg"
+            android:layout_centerHorizontal="true" />
+
+        <View
+            android:id="@+id/dummy"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/dummy2"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/txt_infoMsg"
+            android:layout_toLeftOf="@id/dummy"
+            android:background="@drawable/ic_check_btn" />
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/txt_infoMsg"
+            android:layout_toRightOf="@id/dummy"
+            android:background="@drawable/ic_cancel_btn" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_question"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        app:layout_constraintBottom_toTopOf="@id/btn_group1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/txt_question"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/btn_unclicked_shadow"
+            android:fontFamily="@font/oxygen"
+            android:paddingLeft="24dp"
+            android:paddingTop="16dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp">
+
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btn_group1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        app:layout_constraintBottom_toTopOf="@id/btn_group2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_choice1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:background="@drawable/btn_unclicked_shadow"
+            android:fontFamily="@font/oxygen_bold"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_choice2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:background="@drawable/btn_unclicked_shadow"
+            android:fontFamily="@font/oxygen_bold"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_group2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:weightSum="20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_choice3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:background="@drawable/btn_unclicked_shadow"
+            android:fontFamily="@font/oxygen_bold"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_choice4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_choice3"
+            android:layout_weight="9"
+            android:background="@drawable/btn_unclicked_shadow"
+            android:fontFamily="@font/oxygen_bold"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

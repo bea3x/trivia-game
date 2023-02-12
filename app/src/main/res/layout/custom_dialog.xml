@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="12dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_weight="8"
+            android:text="Are You Sure?"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="24dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:foregroundGravity="center"
+            android:background="@drawable/ic_close_btn"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

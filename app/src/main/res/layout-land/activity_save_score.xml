@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    tools:context=".SaveScore">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="120dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="80dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_extra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="260dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo_new"
+        app:layout_constraintBottom_toTopOf="@id/guideline_top"
+        app:layout_constraintLeft_toRightOf="@id/guideline_left"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/dateDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/side_bottom"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintBottom_toTopOf="@id/guideline_top"
+        app:layout_constraintLeft_toRightOf="@id/guideline_extra"
+        app:layout_constraintRight_toLeftOf="@id/guideline_right">
+
+        <TextView
+            android:id="@+id/dateLbl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:text="Date: "
+            android:textColor="@color/violet" />
+
+        <TextView
+            android:id="@+id/sysdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:textColor="@color/blueberry"
+            android:text="07-03-2020" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/blue_tint"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/cheque_blue_tint"
+        app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_top" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/side_bottom"
+        android:fontFamily="@font/source_code_pro_light"
+        android:hint="Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/guideline_left"
+        app:layout_constraintRight_toLeftOf="@id/guideline_extra"
+        app:layout_constraintTop_toBottomOf="@id/guideline_top" />
+
+    <TextView
+        android:id="@+id/scoreInWords"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/side_bottom"
+        android:fontFamily="@font/source_code_pro_medium"
+        android:hint="ONE MILLION PESOS"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/guideline_left"
+        app:layout_constraintRight_toLeftOf="@id/guideline_extra"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+    <TextView
+        android:id="@+id/cheque-lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/source_code_pro_light"
+        android:letterSpacing=".5"
+        android:text="-- player's cheque --"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/blue_tint"
+        app:layout_constraintLeft_toRightOf="@id/guideline_left"
+        app:layout_constraintRight_toLeftOf="@id/guideline_extra" />
+
+
+    <LinearLayout
+        android:id="@+id/amountDet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:weightSum="10"
+        app:layout_constraintBottom_toTopOf="@id/scoreInWords"
+        app:layout_constraintLeft_toRightOf="@id/guideline_extra"
+        app:layout_constraintRight_toLeftOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/guideline_top">
+
+        <TextView
+            android:id="@+id/currency"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="₱"
+            android:textColor="@color/violet_dark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/showScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_weight="9"
+            android:background="@drawable/cheque_box"
+            android:fontFamily="@font/share_tech_mono"
+            android:gravity="fill"
+            android:paddingLeft="8dp"
+            android:text="1,000,000"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_saveConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="24dp"
+        android:text="save score"
+        app:layout_constraintRight_toLeftOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/guideline_bottom" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
